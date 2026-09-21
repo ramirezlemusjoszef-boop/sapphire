@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sapphire and J's Jewelry Repairs, Downtown Nassau</title>
+<meta name="description" content="Jewelry repairs by a jeweler with ten years at the bench in The Bahamas. 100% leather bags and shoes, jewelry and coins. Downtown Nassau. WhatsApp 242-438-1852.">
+<meta property="og:title" content="Sapphire and J's Jewelry Repairs, Downtown Nassau">
+<meta property="og:description" content="Jewelry repairs upstairs. Leather, jewelry and coins downstairs.">
+<meta property="og:image" content="img/ring-bench.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Josefin+Sans:wght@600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --mint:#A9D9CE; --mint-deep:#4F8F84; --mint-pale:#E6F4F0;
+  --sapphire:#1D3461; --gold:#E2BD3B; --paper:#F7FAF8; --ink:#1F2B30;
+  --script:'Parisienne', 'Brush Script MT', cursive;
+  --head:'Josefin Sans', 'Trebuchet MS', Arial, sans-serif;
+  --body:'Nunito Sans', 'Segoe UI', Arial, sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+h2{font-family:var(--head);font-weight:700;color:var(--sapphire);font-size:clamp(1.6rem,4.5vw,2.3rem);line-height:1.15;margin:0 0 .6em;letter-spacing:.01em}
+p{margin:0 0 1em;max-width:62ch}
+
+/* Arched frames echo the arched sign and doorways of the building */
+.arch{border-radius:999px 999px 18px 18px;overflow:hidden;background:var(--mint-pale)}
+.arch img{width:100%;height:100%;object-fit:cover}
+
+/* Hero */
+.hero{background:var(--mint);padding:28px 0 56px;position:relative}
+.hero .wrap{display:grid;gap:34px;align-items:center}
+.wordmark{font-family:var(--script);font-size:clamp(4rem,16vw,7.5rem);line-height:1;color:var(--ink);margin:10px 0 6px;font-weight:400}
+.floors{font-family:var(--head);font-weight:600;font-size:clamp(1.05rem,3.4vw,1.3rem);color:var(--sapphire);margin:0 0 18px;line-height:1.45}
+.years{font-size:1.05rem;max-width:34ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font-weight:700;text-decoration:none;font-size:1rem;border:2px solid var(--sapphire);min-height:48px}
+.btn-wa{background:var(--sapphire);color:#fff}
+.btn-wa:hover{background:#142648}
+.btn-call{background:transparent;color:var(--sapphire)}
+.btn-call:hover{background:rgba(29,52,97,.08)}
+.hero .arch{max-width:360px;aspect-ratio:3/4;justify-self:center;width:100%;border:6px solid var(--paper)}
+@media(min-width:820px){
+  .hero .wrap{grid-template-columns:1.15fr .85fr}
+  .hero{padding:48px 0 72px}
+}
+
+/* Bench / repairs */
+.bench{padding:64px 0}
+.bench .wrap{display:grid;gap:40px}
+@media(min-width:860px){.bench .wrap{grid-template-columns:.8fr 1.2fr;align-items:start}}
+.bench .arch{aspect-ratio:3/4;max-width:340px}
+.picker{background:#fff;border:2px solid var(--mint);border-radius:22px;padding:24px}
+.picker h3{font-family:var(--head);font-size:1.25rem;color:var(--sapphire);margin:0 0 4px}
+.picker .hint{font-size:.95rem;color:#51626a;margin-bottom:16px}
+.options{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}
+.opt{font:inherit;font-size:.97rem;padding:10px 16px;border-radius:999px;border:2px solid var(--mint-deep);background:var(--paper);color:var(--ink);cursor:pointer;min-height:44px}
+.opt[aria-pressed="true"]{background:var(--mint-deep);color:#fff}
+.preview{background:var(--mint-pale);border-radius:14px 14px 14px 4px;padding:14px 16px;font-size:.98rem;margin-bottom:16px;min-height:3.2em}
+.picker .btn-wa{width:100%;justify-content:center}
+
+/* Downstairs */
+.shop{background:var(--sapphire);color:#EEF3FA;padding:64px 0}
+.shop h2{color:#fff}
+.shop .wrap{display:grid;gap:36px}
+@media(min-width:860px){.shop .wrap{grid-template-columns:1.2fr .8fr;align-items:center}}
+.goods{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:18px}
+.goods li{border-left:4px solid var(--gold);padding-left:16px}
+.goods strong{display:block;font-family:var(--head);font-size:1.15rem;color:var(--gold);letter-spacing:.01em}
+.shop .arch{aspect-ratio:3/4;max-width:340px;justify-self:center;width:100%;border:6px solid var(--mint)}
+
+/* Find us: a real sequence, so the steps are numbered */
+.find{padding:64px 0}
+.steps{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:26px;counter-reset:step}
+@media(min-width:760px){.steps{grid-template-columns:repeat(3,1fr)}}
+.steps li{counter-increment:step}
+.steps .arch{aspect-ratio:3/4;margin-bottom:14px}
+.steps h3{font-family:var(--head);color:var(--sapphire);font-size:1.12rem;margin:0 0 4px}
+.steps h3::before{content:counter(step);display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--gold);color:var(--ink);font-size:.95rem;margin-right:10px;vertical-align:1px}
+.steps p{font-size:.97rem}
+
+/* Contact */
+.contact{background:var(--mint);padding:56px 0 calc(56px + env(safe-area-inset-bottom,0px))}
+.contact .wordmark{font-size:clamp(3rem,11vw,4.5rem)}
+.contact p{font-size:1.05rem}
+.fine{font-size:.85rem;color:#3c4b51;margin-top:28px}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <h1 class="wordmark">Sapphire</h1>
+      <p class="floors">Jewelry repairs upstairs.<br>Leather, jewelry and coins downstairs.<br>Downtown Nassau.</p>
+      <p class="years">Ten years at the jeweler's bench in The Bahamas. Bring your piece in, or send us a photo first.</p>
+      <div class="cta">
+        <a class="btn btn-wa" href="https://wa.me/12424381852?text=Hi%2C%20I%20have%20a%20piece%20I%27d%20like%20you%20to%20look%20at." target="_blank" rel="noopener">Message us on WhatsApp</a>
+        <a class="btn btn-call" href="tel:+12424381852">Call 242-438-1852</a>
+      </div>
+    </div>
+    <div class="arch">
+      <img src="img/ring-bench.jpg" alt="A yellow diamond ring with a diamond halo, held over the jeweler's workbench" width="900" height="1200">
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="bench" id="repairs">
+    <div class="wrap">
+      <div class="arch">
+        <img src="img/ring-top.jpg" alt="Close view of a cushion-cut yellow diamond set in a halo of small diamonds" width="900" height="1200" loading="lazy">
+      </div>
+      <div>
+        <h2>J's Jewelry Repairs, the workshop upstairs</h2>
+        <p>Rings that no longer fit, chains that snapped, stones that came loose. For ten years this bench has been fixing the pieces people don't want to replace. Upstairs, you talk directly to the jeweler who does the work.</p>
+
+        <div class="picker" aria-labelledby="picker-title">
+          <h3 id="picker-title">What needs fixing?</h3>
+          <p class="hint">Pick one and we'll open WhatsApp with the message ready. Add a photo of the piece and we'll tell you what it needs.</p>
+          <div class="options" role="group" aria-label="Type of repair">
+            <button class="opt" type="button" aria-pressed="false" data-msg="a ring that needs resizing">Ring too big or small</button>
+            <button class="opt" type="button" aria-pressed="false" data-msg="a broken chain">Broken chain</button>
+            <button class="opt" type="button" aria-pressed="false" data-msg="a loose or missing stone">Loose or missing stone</button>
+            <button class="opt" type="button" aria-pressed="false" data-msg="worn prongs holding a stone">Worn prongs</button>
+            <button class="opt" type="button" aria-pressed="false" data-msg="a broken clasp">Broken clasp</button>
+            <button class="opt" type="button" aria-pressed="false" data-msg="a piece that needs cleaning and polishing">Cleaning and polish</button>
+            <button class="opt" type="button" aria-pressed="false" data-msg="something else I'd like you to look at">Something else</button>
+          </div>
+          <div class="preview" id="preview" aria-live="polite">Hi, I have a piece I'd like you to look at.</div>
+          <a class="btn btn-wa" id="send" href="https://wa.me/12424381852" target="_blank" rel="noopener">Send on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="shop" id="shop">
+    <div class="wrap">
+      <div>
+        <h2>The shop downstairs</h2>
+        <p>Walk in at street level and you're in Sapphire, our shop with things you won't find in the rest of downtown.</p>
+        <ul class="goods">
+          <li><strong>100% leather bags and shoes</strong>Made in Colombia, a country known for its leatherwork. Real leather that softens with use instead of peeling.</li>
+          <li><strong>Jewelry and coins</strong>Pieces chosen by a jeweler, and checked by one before they go in the case.</li>
+          <li><strong>Sunglasses, and much more</strong>Ask us. If we don't have it, we'll tell you who does.</li>
+        </ul>
+      </div>
+      <div class="arch">
+        <img src="img/shop.jpg" alt="Inside the Sapphire shop: jewelry cases, a wall of sunglasses and leather bags" width="900" height="1200" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="find" id="find">
+    <div class="wrap">
+      <h2>How to find us</h2>
+      <p>We're in one of the painted lanes downtown, a short walk from Bay Street.</p>
+      <ol class="steps">
+        <li>
+          <div class="arch"><img src="img/lane.jpg" alt="A lane of orange, blue and pink buildings with a stone-paved walkway" width="900" height="1200" loading="lazy"></div>
+          <h3>Walk into the painted lanes</h3>
+          <p>From our door you can see the Loaded Clam sports bar, so if you find it, you've found us.</p>
+        </li>
+        <li>
+          <div class="arch"><img src="img/sign.jpg" alt="The Sapphire sign on a mint-green wall, listing jewelry repairs, leather bags and shoes, jewelry and coins" width="900" height="1200" loading="lazy"></div>
+          <h3>Look for the mint-green building</h3>
+          <p>The Sapphire sign with the flowers is on the wall next to the entrance.</p>
+        </li>
+        <li>
+          <div class="arch"><img src="img/storefront.jpg" alt="The open front of the shop, with the J's Jewelry Repairs Upstairs sign beside it" width="900" height="1200" loading="lazy"></div>
+          <h3>Shop downstairs, repairs upstairs</h3>
+          <p>Come in for the shop, or follow the red "Upstairs" sign to the workshop.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+</main>
+
+<footer class="contact">
+  <div class="wrap">
+    <p class="wordmark">Sapphire</p>
+    <p>WhatsApp or call <a href="tel:+12424381852"><strong>242-438-1852</strong></a><br>Downtown Nassau, in the lane by the Loaded Clam</p>
+    <div class="cta">
+      <a class="btn btn-wa" href="https://wa.me/12424381852?text=Hi%2C%20I%20have%20a%20piece%20I%27d%20like%20you%20to%20look%20at." target="_blank" rel="noopener">Message us on WhatsApp</a>
+    </div>
+    <p class="fine">Sapphire and J's Jewelry Repairs, Nassau, The Bahamas</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var opts=document.querySelectorAll('.opt');
+  var preview=document.getElementById('preview');
+  var send=document.getElementById('send');
+  function setMsg(text){
+    preview.textContent=text;
+    send.href='https://wa.me/12424381852?text='+encodeURIComponent(text);
+  }
+  setMsg(preview.textContent);
+  opts.forEach(function(b){
+    b.addEventListener('click',function(){
+      opts.forEach(function(o){o.setAttribute('aria-pressed','false')});
+      b.setAttribute('aria-pressed','true');
+      setMsg("Hi, I have "+b.dataset.msg+". Can you take a look? I'll send a photo.");
+    });
+  });
+})();
+</script>
+</body>
+</html>
